@@ -17,10 +17,11 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
   backend:
     build:
-      context: ./backend
+      context: ./credit-app-backend       
       dockerfile: Dockerfile
     container_name: credit-backend
     depends_on:
@@ -36,7 +37,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./credit-app-frontend     
       dockerfile: Dockerfile
     container_name: credit-frontend
     ports:
