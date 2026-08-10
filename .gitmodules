@@ -1,0 +1,6 @@
+[submodule "credit-app-backend"]
+	path = credit-app-backend
+	url = https://github.com/SergeyGT/credit-app-backend.git
+[submodule "credit-app-frontend"]
+	path = credit-app-frontend
+	url = https://github.com/SergeyGT/credit-app-frontend.git
